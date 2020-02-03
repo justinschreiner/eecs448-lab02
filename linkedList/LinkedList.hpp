@@ -51,10 +51,11 @@ bool LinkedList<T>::search(T value) const
 		return(false);
 	}
 	else{
-		while(temp->getNext() != nullptr){
+		for(int i = 1; i < m_size; i++){
 			if (temp->getValue() == value){
-				return(true);
+			return(true);
 			}
+			temp = temp->getNext();
 		}
 	}
 
