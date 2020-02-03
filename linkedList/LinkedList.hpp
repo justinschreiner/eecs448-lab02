@@ -117,7 +117,7 @@ bool LinkedList<T>::removeBack()
 	Node<T>* lastNode = nullptr;
 
 	if (temp == nullptr){
-		return(true);
+		return(false);
 	}
 	if(m_size == 1)
 	{
